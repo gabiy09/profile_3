@@ -1,0 +1,206 @@
+h1, h2{
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+}
+
+p, a {
+  font-family: 'Comme', sans-serif;
+}
+
+body {
+  background-color: #FBFFDC;
+}
+
+img {
+  width: 175px;
+  height: 175px;
+  border-radius: 20%;
+  margin-bottom: 20px;
+}
+
+.first {
+  display: grid;
+  width: 1550px;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.intro {
+  border-color: black;
+  border: 2px;
+  border-style: solid;
+  padding: 2%;
+  text-align: center;
+  box-shadow: 5px 5px 3px rgb(70, 70, 70);
+  background-color: #D0F5BE;
+  width: 600px;
+  height: 600px;
+  font-size: large;
+  margin: auto;
+}
+
+img.intro2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left:20px;
+}
+
+img.intro2:hover{
+  color: rgba(red, green, blue, 0.1);
+}
+
+.buddy {
+  border-color: black;
+  border: 2px;
+  border-style: solid;
+  padding: 4%;
+  text-align: center;
+  background-color: #79E0EE;
+  width: 1200px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+
+}
+
+img.buddies {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.btn_intro {
+  text-decoration: none;
+  background-color: #98EECC;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.btn_intro:hover {
+  color: black;
+  background-color: #79E0EE;
+  transition: 0.5s;
+}
+
+.network {
+  border-color: black;
+  border: 2px;
+  border-style: dotted;
+  padding: 2%;
+  margin-top: 80px;
+  background-color: #D0F5BE;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-decoration: none;
+}
+
+.reseaux {
+font-size: 50px;
+margin-right: 50px;
+margin-left: 50px;
+color: #79E0EE;
+}
+.reseaux:hover{
+  color: black;
+  transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  text-decoration: none;
+  width: 150px;
+  height: 150px;
+}
+
+
+a:visited{
+  text-decoration: none;
+  color: #FBFFDC;
+}
+
+.capy{
+  display: flex;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  display: inline;
+  margin-right: 50px;
+  margin-left: 160px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  color: black;
+}
+
+
+.flip-card-back {
+  color: #79E0EE ;
+  transform: rotateY(180deg);
+}
+
+
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
